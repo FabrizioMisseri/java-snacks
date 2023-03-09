@@ -1,5 +1,7 @@
 package snacks.java;
 
+import java.util.Random;
+
 public class Snack2 {
 
     public static void main(String[] args){
@@ -10,11 +12,12 @@ public class Snack2 {
 //        una falsa lista di invitati con nome e cognome.
     String[] nomi = {"marco", "paolo", "anna"};
     String[] cognomi = {"matto","matti","matta"};
+        Random rand = new Random();
 
     String[] nomiCompleti = new String[3];
 
         for (int i = 0; i < nomiCompleti.length; i++) {
-            nomiCompleti[i] = nomi[i] + " " + cognomi[i];
+            nomiCompleti[i] = nomi[i] + " " + cognomi[rand.nextInt(3)];
         };
 
         for (String element: nomiCompleti){
