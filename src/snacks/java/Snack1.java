@@ -12,15 +12,20 @@ public class Snack1 {
         System.out.println("inserisci un numero");
         int num = Integer.parseInt(scan.nextLine());
 
-        while(num % 2 == 0){
-            System.out.println("il numero è pari");
+        System.out.println(num % 2 == 0 ? "" + num : "" + (num + 1));
 
-            System.out.println("inserisci un numero");
-            num = Integer.parseInt(scan.nextLine());
-        }
+//
+//        while(num % 2 == 0){
+//            System.out.println("il numero è pari");
+//
+//            System.out.println("inserisci un numero");
+//            num = Integer.parseInt(scan.nextLine());
+//        }
+//
+//        System.out.println("in numero è dispari");
+//        System.out.println("FINE");
 
-        System.out.println("in numero è dispari");
-        System.out.println("FINE");
+
 
 
         scan.close();
