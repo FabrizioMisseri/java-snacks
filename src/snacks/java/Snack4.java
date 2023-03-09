@@ -1,6 +1,7 @@
 package snacks.java;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Snack4 {
     public static void main(String[] args){
@@ -10,7 +11,18 @@ public class Snack4 {
 //        presenti nell’array che ne ha di meno + quelli mostrati a video non è uguale al
 //        numero di elementi presenti nell’array che ne ha di più
 
-        Integer[] lista1 = {1,2,3,4,5};
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("inserisci numero di elementi che vuoi inserire");
+        Integer size = Integer.parseInt(scan.nextLine());
+        Integer[] lista1 = new Integer[size];
+
+        for (Integer num: lista1){
+            System.out.println("inserisci numero");
+            num = Integer.parseInt(scan.nextLine());
+        }
+        System.out.println("************************");
+
         Integer[] lista2 = {1,2,3,4,5,6,7,8,9};
 
         Random rand = new Random();
@@ -27,6 +39,7 @@ public class Snack4 {
             }
         }
 
+        scan.close();
         System.out.println("SASSONE");
     }
 }
