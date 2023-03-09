@@ -29,6 +29,7 @@ public class Snack1 {
 
 
         scan.close();
+        System.out.println("SASSONE");
 
 
 
