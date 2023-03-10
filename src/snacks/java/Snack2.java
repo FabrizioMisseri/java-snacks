@@ -14,10 +14,10 @@ public class Snack2 {
     String[] cognomi = {"matto","matti","matta"};
         Random rand = new Random();
 
-    String[] nomiCompleti = new String[3];
+    String[] nomiCompleti = new String[nomi.length];
 
         for (int i = 0; i < nomiCompleti.length; i++) {
-            nomiCompleti[i] = nomi[rand.nextInt(3)] + " " + cognomi[rand.nextInt(3)];
+            nomiCompleti[i] = nomi[rand.nextInt(nomi.length)] + " " + cognomi[rand.nextInt(cognomi.length)];
         };
 
         for (String element: nomiCompleti){
