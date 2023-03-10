@@ -17,7 +17,7 @@ public class Snack2 {
     String[] nomiCompleti = new String[3];
 
         for (int i = 0; i < nomiCompleti.length; i++) {
-            nomiCompleti[i] = nomi[i] + " " + cognomi[rand.nextInt(3)];
+            nomiCompleti[i] = nomi[rand.nextInt(3)] + " " + cognomi[rand.nextInt(3)];
         };
 
         for (String element: nomiCompleti){
